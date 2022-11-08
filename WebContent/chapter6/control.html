@@ -1,0 +1,33 @@
+	<!-- リクエストパラメーターとフォーム部品を使ったHTMLファイル -->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Servlet/JSP Samples</title>
+</head>
+<body>
+
+	<p>🍴レストランをご予約ください🍴</p>
+	<form action="control" method="post">
+		
+	<p>・人数</p>
+		<p><select name="count">
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>	
+		</select></p>
+		
+	<p>・座席</p>
+		<p><input type="radio" name="seat" value="禁煙" checked>禁煙
+		<input type="radio" name="seat" value="喫煙" >喫煙</p>
+	
+	<p>・オプション</p>
+		<p><input type="checkbox" name="option" value="ケーキ">ケーキ
+		<input type="checkbox" name="option" value="花束">花束</p>
+		
+	<p><input type="submit" value="予約"></p>
+	</form>
+
+</body>
+</html>

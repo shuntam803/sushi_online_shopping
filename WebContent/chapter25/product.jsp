@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+  pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ include file="../header.html"%>
+<%@ include file="menu.jsp"%>
+
+<!-- 商品検索画面 -->
+<p>検索キーワードを入力してください。</p>
+
+<form action="Product.action" method="post">
+  <input type="text" name="keyword">
+  <input type="submit" value="検索">
+</form>
+<hr>
+
+<table border=1 style="border-collapse: separate; border-spacing: 1px">
+  <c:forEach var="product" items="${list}">
+    <tr>
+      <td>商品${product.id}</td>
+      <td><img src="image/${product.id}.jpg" height="64"></td>
+      <td style="text-align: center">${product.name}</td>
+      <td style="text-align: right">${product.price}円</td>
+      <td><a href="CartAdd.action?id=${product.id}">カートに追加</a></td>
+    </tr>
+
+  </c:forEach>
+</table>
+<%@ include file="../footer.html"%>

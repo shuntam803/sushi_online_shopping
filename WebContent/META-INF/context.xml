@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration>
+<!-- 上記はEclipseの警告を消すための記述です。 -->
+<Context relodable="true">
+
+	<Resource 
+		name="jdbc/sushi_online_shopping"
+		auth="Container"
+		type="javax.sql.DataSource"
+		driverClassName="com.mysql.cj.jdbc.Driver"
+		url="jdbc:mySQL://localhost:3306/test_schema"
+		conecctionProperties="autoReconnect=false;verifyServerCertificate=false;use=SSL=false;useUnicode=true;characterEncoding=UTF-8;"
+		username="root"
+		password="4gp351dG!">
+	</Resource>
+		
+		
+</Context>
