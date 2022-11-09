@@ -9,30 +9,6 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
-  <servlet>
-    <servlet-name>hello3</servlet-name>
-    <servlet-class>chapter4.Hello3</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>hello3</servlet-name>
-    <url-pattern>/chapter4/hello3</url-pattern>
-  </servlet-mapping>
-  <filter>
-    <filter-name>hellofilter</filter-name>
-    <filter-class>chapter10.HelloFilter</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>hellofilter</filter-name>
-    <url-pattern>/chapter3/hello</url-pattern>
-  </filter-mapping>
-  <filter>
-    <filter-name>hellofilter2</filter-name>
-    <filter-class>chapter10.HelloFilter2</filter-class>
-  </filter>
-  <filter-mapping>
-    <filter-name>hellofilter2</filter-name>
-    <url-pattern>/chapter3/hello</url-pattern>
-  </filter-mapping>
   <session-config>
     <session-timeout>3</session-timeout>
   </session-config>
@@ -64,4 +40,8 @@
     <param-name>message</param-name>
     <param-value>context</param-value>
   </context-param>
+  <mime-mapping>
+     <extension>css</extension>
+     <mime-type>text/css</mime-type>
+   </mime-mapping>
 </web-app>

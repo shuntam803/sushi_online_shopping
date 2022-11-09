@@ -8,14 +8,13 @@
 <c:choose>
   <c:when test="${cart.size() > 0}">
     <p>${cart.size()}種類の商品があります。</p>
-    <hr>
   </c:when>
   <c:otherwise>
     <p>カートに商品がありません。</p>
   </c:otherwise>
 </c:choose>
 
-<table border=1 style="border-collapse: separate; border-spacing: 1px">
+<table class="table table-bordered">
   <c:forEach var="item" items="${cart}">
     <tr>
       <td>商品${item.product.id}</td>

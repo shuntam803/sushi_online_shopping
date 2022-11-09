@@ -1,9 +1,9 @@
-#Webアプリケーション開発の実践
+## 寿司オンラインショッピング
 
 	
 
 
-	-- book --
+	-- sushi-online-shopping --
 		-- WebContent
 			-- chapter24
 				- login-in.jsp					<--  ログインの入力画面

@@ -1,126 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+
 <head>
-<meta charset="UTF-8">
-<title>Servlet/JSP Samples</title>
-
-<link rel="stylesheet" href="css/headers.css">
-<link rel="stylesheet" href="css/common.css">
-<link rel="stylesheet" href="css/style.css">
-  <style>
-  /* 盤全体を黒色にする */
-  .board {
-    background-color: black;
-    }
-  .board tr td {
-    background-color: seagreen;
-    width: 16px;
-    height: 16px;
-    line-height: 16px;
-    }
-  .kuro:before {
-    color: black;
-    content: "●"}
-  .kuro:before {
-    color: white;
-    content: "●"}
-  </style>
-
-
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Shuncubのポートフォリオサイト</title>
+  <meta name="description" content="Shuncubのポートフォリオサイト">
+  <link rel="icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  Welcome!
- <table id="myyBoard" class="board">
-   <!-- 1 -->
-   <tr>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-   </tr>
-   <!-- 2 -->
-   <tr>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-   </tr>
-   <!-- 3 -->
-   <tr>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-   </tr>
-   <!-- 4 -->
-   <tr>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td>〇</td>
-     <td>●</td>
-     <td></td>
-     <td></td>
-     <td></td>
-   </tr>
-   <!-- 5 -->
-   <tr>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-   </tr>
-   <!-- 6 -->
-   <tr>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-   </tr>
-   <!-- 7 -->
-   <tr>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-   </tr>
-   <!-- 8 -->
-   <tr>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-     <td></td>
-   </tr>
- </table>
 
-  <br>chapter12のリダイレクト確認
+<body>
+  <header class="wrapper">
+    <img class="photo" src="images/photo.png" alt="写真アイコン">
+    <h1>Shuncub</h1>
+    <p>ウェブデザイナー見習い</p>
+  </header>
+
+  <main>
+    <section class="myskills">
+      <div class="wrapper">
+        <h2>MY SKILLS</h2>
+        <ul>
+          <li class="skill_html5">HTML5</li>
+          <li class="skill_css3">CSS3</li>
+          <li class="skill_javascript">JavaScript</li>
+          <li class="skill_python">Python</li>
+          <li class="skill_java">Java</li>
+        </ul>
+      </div>
+    </section>
+    <section class="wrapper">
+      <h2>WORKS</h2>
+      <div class="works_box">
+        <img class="works_image" src="images/cat.png" alt="猫のサイト">
+        <h3>猫のサイト</h3>
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      </div>
+      <div class="works_box">
+        <img class="works_image" src="images/dog.png" alt="犬のサイト">
+        <h3>犬のサイト</h3>
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      </div>
+      <div class="works_box">
+        <img class="works_image" src="images/turtle.png" alt="亀のサイト">
+        <h3>亀のサイト</h3>
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="wrapper">
+      <p><small>&copy; 2022 Shuncub.jp</small></p>
+    </div>
+  </footer>
+
 </body>
+
 </html>

@@ -8,10 +8,10 @@
 		auth="Container"
 		type="javax.sql.DataSource"
 		driverClassName="com.mysql.cj.jdbc.Driver"
-		url="jdbc:mySQL://localhost:3306/test_schema"
+		url="jdbc:mySQL://localhost:3306/sushi-online-shop"
 		conecctionProperties="autoReconnect=false;verifyServerCertificate=false;use=SSL=false;useUnicode=true;characterEncoding=UTF-8;"
 		username="root"
-		password="4gp351dG!">
+		password="t8Gipnej!">
 	</Resource>
 		
 		

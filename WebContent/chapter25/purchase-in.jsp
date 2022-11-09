@@ -7,8 +7,8 @@
 <!-- 購入画面を表示するJSP -->
 <p>${cart.size()}種類の商品があります。</p>
 <hr>
-
-<table border=1 style="border-collapse: separate; border-spacing: 1px;">
+<div class="container-fluid">
+<table class="table table-bordered""text-center">
   <c:forEach var="item" items="${cart}">
     <tr>
       <td>商品${item.product.id}</td>

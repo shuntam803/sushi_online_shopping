@@ -11,7 +11,7 @@ public class MySQLConnection {
 	// コンストラクタを使って"InitialContext"オブジェクトを取得
 	InitialContext ic = new InitialContext();
 	// データベースへ接続するための"DataSource"オブジェクトを取得
-	DataSource ds = (DataSource) ic.lookup("java:/comp/env/jdbc/book");
+	DataSource ds = (DataSource) ic.lookup("java:/comp/env/jdbc/sushi-online-shop");
 		
 	return ds.getConnection();
 	}

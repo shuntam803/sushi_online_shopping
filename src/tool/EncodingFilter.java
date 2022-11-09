@@ -9,6 +9,7 @@ import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpServletRequest;
 /**
  * リクエストとレスポンスに関して
  * 文字エンコーディングやMIMEタイプの設定を行うクラス
@@ -24,7 +25,11 @@ public class EncodingFilter implements Filter {
 		ServletRequest request, ServletResponse response, FilterChain chain) throws ServletException, IOException {
 		
 		request.setCharacterEncoding("UTF-8");
-		response.setContentType("text/html; charset=UTF-8");
+		if (request instanceof HttpServletRequest && ((HttpServletRequest) request).getRequestURI().endsWith(".css")) {
+			response.setContentType("text/css; charset=UTF-8");
+		} else {
+			response.setContentType("text/html; charset=UTF-8");
+		}
 		// サーブレットやJSPの呼び出し後に行う処理
 		// System.out.println("フィルタの前処理");
 		
