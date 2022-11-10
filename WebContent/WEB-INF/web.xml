@@ -1,47 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
-  <display-name>sushi_online_shopping</display-name>
-  <welcome-file-list>
-    <welcome-file>index.html</welcome-file>
-    <welcome-file>index.jsp</welcome-file>
-    <welcome-file>index.htm</welcome-file>
-    <welcome-file>default.html</welcome-file>
-    <welcome-file>default.jsp</welcome-file>
-    <welcome-file>default.htm</welcome-file>
-  </welcome-file-list>
-  <session-config>
-    <session-timeout>3</session-timeout>
-  </session-config>
-  <servlet>
-    <servlet-name>param-servlet</servlet-name>
-    <servlet-class>chapter19.ParamServlet</servlet-class>
-    <init-param>
-      <param-name>massage</param-name>
-      <param-value>servlet-init-param</param-value>
-    </init-param>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>param-servlet</servlet-name>
-    <url-pattern>/chapter19/param-servlet</url-pattern>
-  </servlet-mapping>
-  <filter>
-    <filter-name>param-filter</filter-name>
-    <filter-class>chapter19.ParamFilter</filter-class>
-    <init-param>
-      <param-name>message</param-name>
-      <param-value>filter-init-param</param-value>
-    </init-param>
-  </filter>
-  <filter-mapping>
-    <filter-name>param-filter</filter-name>
-    <url-pattern>/chapter19/param-servlet</url-pattern>
-  </filter-mapping>
-  <context-param>
-    <param-name>message</param-name>
-    <param-value>context</param-value>
-  </context-param>
-  <mime-mapping>
-     <extension>css</extension>
-     <mime-type>text/css</mime-type>
-   </mime-mapping>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>sushi_online_shopping</display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+	</welcome-file-list>
+
+	<session-config>
+		<session-timeout>3</session-timeout>
+	</session-config>
+
+	<context-param>
+		<param-name>message</param-name>
+		<param-value>context</param-value>
+	</context-param>
+
+	<mime-mapping>
+		<extension>css</extension>
+		<mime-type>text/css</mime-type>
+	</mime-mapping>
+
 </web-app>
